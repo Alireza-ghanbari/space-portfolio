@@ -1,6 +1,7 @@
 import AboutSection from "../Components/AboutSection";
 import HeroSection from "../Components/HeroSection";
 import Navbar from "../Components/Navbar";
+import ProjectSection from "../Components/ProjectSection";
 import SkillsSection from "../Components/SkillsSection";
 import StarBackground from "../Components/StarBackground";
 import ThemeToggle from "../Components/ThemeToggle";
@@ -15,6 +16,7 @@ export default function Home() {
         <HeroSection />
         <AboutSection />
         <SkillsSection />
+        <ProjectSection />
       </main>
     </div>
   );
