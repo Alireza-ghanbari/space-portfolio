@@ -1,6 +1,21 @@
+import { useEffect, useState } from "react";
 import { FaArrowDown } from "react-icons/fa";
 
 export default function HeroSection() {
+  const [isScrolling, setIsScrolling] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolling(true);
+    };
+
+    window.addEventListener("scroll", handleScroll, { once: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <section
       id="hero"
@@ -33,7 +48,11 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
+      <div
+        className={`absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce transition-opacity duration-500 ${
+          isScrolling ? "opacity-0" : "opacity-100"
+        }`}
+      >
         <span className="text-sm text-forground mb-2">Scroll</span>
         <FaArrowDown className="h-5 w-5 text-primary" />
       </div>

@@ -63,8 +63,8 @@ export default function ProjectSection() {
 
               <div className="px-4 py-6">
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tags.map((tag) => (
-                    <span className="px-2 py-1 text-xs text-forground font-medium rounded-full border">
+                  {project.tags.map((tag, key) => (
+                    <span key={key} className="px-2 py-1 text-xs text-forground font-medium rounded-full border">
                       {tag}
                     </span>
                   ))}
