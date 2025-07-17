@@ -11,23 +11,39 @@ const navItems = [
   { name: "Contact", href: "#contact" },
 ];
 export default function Navbar() {
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [isNavActive, setIsNavActive] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
+      setIsNavActive(window.scrollY > 10);
     };
 
     window.addEventListener("scroll", handleScroll);
+
+    handleScroll();
+
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [isMenuOpen]);
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+
+    return () => {
+      document.body.classList.remove("overflow-hidden");
+    };
+  }, [isMenuOpen]);
+
   return (
     <nav
       className={cn(
         "fixed w-full z-40 transition-all duration-300",
-        isScrolled
-          ? "py-3 bg-background/80 backdrop-blur-md shadow-xs "
+        isNavActive
+          ? "py-3 bg-background/80 backdrop-blur-md shadow-xs"
           : "py-5"
       )}
     >
@@ -42,6 +58,7 @@ export default function Navbar() {
         </a>
 
         {/* desktop */}
+
         <div className="hidden md:flex space-x-8">
           {navItems.map((item) => (
             <a
