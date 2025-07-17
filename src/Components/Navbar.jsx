@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { cn } from "../lib/utils";
 import { IoMdClose, IoMdMenu } from "react-icons/io";
+import ThemeToggle from "./ThemeToggle";
 
 const navItems = [
   { name: "Home", href: "#hero" },
@@ -25,7 +26,9 @@ export default function Navbar() {
     <nav
       className={cn(
         "fixed w-full z-40 transition-all duration-300",
-        isScrolled ? "py-3 bg-background/80 backdrop-blur-md shadowxs " : "py-5"
+        isScrolled
+          ? "py-3 bg-background/80 backdrop-blur-md shadow-xs "
+          : "py-5"
       )}
     >
       <div className="container flex items-center justify-between">
@@ -49,6 +52,7 @@ export default function Navbar() {
               {item.name}
             </a>
           ))}
+          <ThemeToggle />
         </div>
 
         {/* mobile */}
@@ -62,7 +66,7 @@ export default function Navbar() {
 
         <div
           className={cn(
-            "fixed inset-0 bg-background/95 backdrop-blur-md z-40 flex flex-col items-center justify-center",
+            "fixed inset-0 h-screen bg-background/95 backdrop-blur-md z-40 flex flex-col items-center justify-center",
             "transition-all duration-300 md:hidden",
             isMenuOpen
               ? "opacity-100 pointer-events-auto"
@@ -80,6 +84,9 @@ export default function Navbar() {
                 {item.name}
               </a>
             ))}
+            <a onClick={() => setIsMenuOpen(false)} className="text-center">
+              <ThemeToggle />
+            </a>
           </div>
         </div>
       </div>

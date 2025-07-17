@@ -4,15 +4,20 @@ import { IoMoonSharp } from "react-icons/io5";
 import { cn } from "../lib/utils";
 
 export default function ThemeToggle() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme");
-    if (storedTheme === "dark") {
-      setDarkMode(true);
+
+    if (!storedTheme) {
+      localStorage.setItem("theme", "dark");
       document.documentElement.classList.add("dark");
+      setDarkMode(true);
+    } else if (storedTheme === "dark") {
+      document.documentElement.classList.add("dark");
+      setDarkMode(true);
     } else {
-      localStorage.setItem("theme", "light");
+      document.documentElement.classList.remove("dark");
       setDarkMode(false);
     }
   }, []);
@@ -32,10 +37,7 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className={cn(
-        "fixed max-sm:hidden top-5 right-5 z-50 p-2 rounded-full transition-colors duration-300",
-        "focus:outline-hidden"
-      )}
+      className={cn("transition-colors duration-300", "focus:outline-hidden")}
     >
       {darkMode ? (
         <IoMdSunny className="h-6 w-6 text-yellow-300" />
