@@ -83,11 +83,14 @@ export default function Navbar() {
 
         <div
           className={cn(
-            "fixed inset-0 h-screen bg-background/95 backdrop-blur-md z-40 flex flex-col items-center justify-center",
+            "fixed inset-0 h-screen z-40 flex flex-col items-center justify-center",
             "transition-all duration-300 md:hidden",
             isMenuOpen
               ? "opacity-100 pointer-events-auto"
-              : "opacity-0 pointer-events-none"
+              : "opacity-0 pointer-events-none",
+            isNavActive
+              ? "backdrop-blur-3xl bg-background/95"
+              : "backdrop-blur-xs bg-background/85"
           )}
         >
           <div className="flex flex-col space-y-8 text-xl">
