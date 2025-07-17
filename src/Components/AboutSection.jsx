@@ -40,8 +40,8 @@ export default function AboutSection() {
           </div>
 
           <div className="grid grid-cols-1 gap-6">
-            <div className="gradient-border p-6 card-hover">
-              <div className="flex items-start gap-4">
+            <div className="gradient-border py-6 px-2 sm:p-6 card-hover">
+              <div className="flex items-start gap-2 sm:gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
                   <IoIosCode className="h-6 w-6 text-primary" />
                 </div>
@@ -54,8 +54,8 @@ export default function AboutSection() {
                 </div>
               </div>
             </div>
-            <div className="gradient-border p-6 card-hover">
-              <div className="flex items-start gap-4">
+            <div className="gradient-border py-6 px-2 sm:p-6 card-hover">
+              <div className="flex items-start gap-2 sm:gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
                   <LuUser className="h-6 w-6 text-primary" />
                 </div>
@@ -68,8 +68,8 @@ export default function AboutSection() {
                 </div>
               </div>
             </div>
-            <div className="gradient-border p-6 card-hover">
-              <div className="flex items-start gap-4">
+            <div className="gradient-border py-6 px-2 sm:p-6 card-hover">
+              <div className="flex items-start gap-2 sm:gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
                   <LuBriefcase className="h-6 w-6 text-primary" />
                 </div>
