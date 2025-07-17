@@ -43,8 +43,8 @@ export default function ProjectSection() {
         </h2>
 
         <p className="text-center text-forground mb-12 max-w-2xl mx-auto">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum
-          qui autem et, modi ipsam aut quaerat fuga dolores?
+          A selection of my recent work built with clean code, modern tools, and
+          real-world functionality.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -64,7 +64,10 @@ export default function ProjectSection() {
               <div className="px-4 py-6">
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag, key) => (
-                    <span key={key} className="px-2 py-1 text-xs text-forground font-medium rounded-full border">
+                    <span
+                      key={key}
+                      className="px-2 py-1 text-xs text-forground font-medium rounded-full border"
+                    >
                       {tag}
                     </span>
                   ))}
@@ -75,20 +78,22 @@ export default function ProjectSection() {
                   {project.description}
                 </p>
                 <div className="flex justify-between items-center">
-                  <div className="flex space-x-3">
+                  <div className="flex flex-wrap space-x-4">
                     <a
                       href={project.demoUrl}
                       target="_blank"
-                      className="text-forground/80 hover:text-primary transition-colors duration-300"
+                      className="text-forground/80 hover:text-primary transition-colors duration-300 flex items-center justify-center gap-1"
                     >
                       <FiExternalLink size={20} />
+                      <span className="text-sm">Demo</span>
                     </a>
                     <a
                       href={project.githubUrl}
                       target="_blank"
-                      className="text-forground/80 hover:text-primary transition-colors duration-300"
+                      className="text-forground/80 hover:text-primary transition-colors duration-300 flex items-center justify-center gap-1"
                     >
                       <FiGithub size={20} />
+                      <span className="text-sm">GitHub</span>
                     </a>
                   </div>
                 </div>
@@ -98,9 +103,13 @@ export default function ProjectSection() {
         </div>
 
         <div className="text-center mt-12">
-            <a href="https://github.com/Alireza-ghanbari" target="_black" className="cosmic-button w-fit flex items-center mx-auto gap-2 hover:scale-100">
-                Check My Github <FaArrowRight size={16} />
-            </a>
+          <a
+            href="https://github.com/Alireza-ghanbari"
+            target="_black"
+            className="cosmic-button w-fit flex items-center mx-auto gap-2 hover:scale-100"
+          >
+            Check My Github <FaArrowRight size={16} />
+          </a>
         </div>
       </div>
     </section>

@@ -71,16 +71,29 @@ export default function ContactSection() {
             <div className="pt-8">
               <h4 className="text-2xl font-semibold mb-6">Connect With Me</h4>
               <div className="flex space-x-4 justify-center text-2xl">
-                <a href="" target="_blank" className="hover:text-primary transition-colors">
+                <a
+                  target="_blank"
+                  className="hover:text-primary transition-colors"
+                >
                   <FaLinkedinIn />
                 </a>
-                <a href="" target="_blank" className="hover:text-primary transition-colors">
+                <a
+                  href="https://www.instagram.com/alireza.ghnbrii"
+                  target="_blank"
+                  className="hover:text-primary transition-colors"
+                >
                   <RiInstagramFill />
                 </a>
-                <a href="" target="_blank" className="hover:text-primary transition-colors">
+                <a
+                  target="_blank"
+                  className="hover:text-primary transition-colors"
+                >
                   <FaXTwitter />
                 </a>
-                <a href="" target="_blank" className="hover:text-primary transition-colors">
+                <a
+                  target="_blank"
+                  className="hover:text-primary transition-colors"
+                >
                   <FaDiscord />
                 </a>
               </div>

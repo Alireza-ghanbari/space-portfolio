@@ -16,14 +16,11 @@ export default function AboutSection() {
               Passionate Developer & Tech Creator
             </h3>
             <p className="text-forground">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id velit
-              veniam dolor ducimus voluptate quisquam consequatur quas illo
-              suscipit tempore.
+              I'm a full-stack web developer with a focus on the MERN stack. I enjoy turning complex ideas into clean, responsive, and scalable web applications. My goal is always to create solutions that are fast, functional, and easy to maintain.
             </p>
 
             <p className="text-forground">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-              dolore vitae nobis fugit saepe. Amet?
+              I’ve worked on a variety of projects, from simple landing pages to dynamic dashboards and RESTful APIs. I value clean code, clear communication, and continuous learning to stay sharp and deliver the best possible results.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">

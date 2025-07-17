@@ -36,14 +36,20 @@ export default function HeroSection() {
           </h1>
 
           <p className="text-lg md:text-xl text-forground mx-auto opacity-0 animate-fade-in-delay-3">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque
-            sunt ipsum deleniti iste repellendus culpa quae, fugiat quaerat a
-            itaque inventore nam officiis minus cum? Sed iusto suscipit dolore
-            ipsam?
+            <span className="text-primary font-semibold">
+              MERN Stack Developer.{" "}
+            </span>
+            I specialize in building modern, scalable, and high-performance web
+            applications using <span className="font-semibold">MongoDB</span>,{" "}
+            <span className="font-semibold">Express.js</span>,{" "}
+            <span className="font-semibold">Node.js</span>, and{" "}
+            <span className="font-semibold">React</span>. With a passion for
+            clean code, intuitive user experiences, and end-to-end development,
+            I turn complex ideas into fast, reliable digital solutions.
           </p>
 
           <div className="opacity-0 animate-fade-in-delay-4 pt-4">
-            <a href="#project" className="cosmic-button">
+            <a href="#projects" className="cosmic-button">
               View My Work
             </a>
           </div>
