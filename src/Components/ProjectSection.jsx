@@ -3,34 +3,141 @@ import { FiExternalLink, FiGithub } from "react-icons/fi";
 
 const projects = [
   {
-    id: 1,
-    title: "project One",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, quod!",
-    image: "/projects/project1.jpg",
-    tags: ["React", "TailwindCss"],
-    demoUrl: "#",
-    githubUrl: "#",
+    id: 12,
+    title: "Razer Shop (MERN) - in progress...",
+    description: "",
+    image: "/projects/razer.png",
+    tags: [
+      "React",
+      "TailwindCss",
+      "Gsap",
+      "Three.js",
+      "i18",
+      "Atropos",
+      "Chart.js",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Multer",
+    ],
+    demoUrl: "/not-found",
+    githubUrl: "https://github.com/MDJAmin/razer-mern-shop",
   },
   {
-    id: 2,
-    title: "project two",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, quod!",
-    image: "/projects/project1.jpg",
-    tags: ["React", "TailwindCss"],
-    demoUrl: "#",
-    githubUrl: "#",
+    id: 8,
+    title: "Real Estate App (MERN)",
+    description: "",
+    image: "/projects/alirezaEstate.png",
+    tags: ["React", "TailwindCss", "Firebase", "Node.js", "Express", "MongoDB"],
+    demoUrl: "https://mern-estate-farsi.onrender.com",
+    githubUrl: "https://github.com/Alireza-ghanbari/mern-estate-farsi",
+  },
+  {
+    id: 10,
+    title: "Blog App (MERN)",
+    description: "",
+    image: "/projects/blogApp.png",
+    tags: [
+      "React",
+      "TailwindCss",
+      "Flowbite React",
+      "React Quill",
+      "Firebase",
+      "Node.js",
+      "Express",
+      "MongoDB",
+    ],
+    demoUrl: "https://mern-blog-8v7r.onrender.com/",
+    githubUrl: "https://github.com/Alireza-ghanbari/mern-blog",
+  },
+  {
+    id: 9,
+    title: "Notes App (MERN)",
+    description: "",
+    image: "/projects/notesApp.png",
+    tags: ["React", "TailwindCss", "Node.js", "Express", "MongoDB"],
+    demoUrl: "https://notes-app-qun6.onrender.com/",
+    githubUrl: "https://github.com/Alireza-ghanbari/notes-app",
+  },
+  {
+    id: 11,
+    title: "X Clone (MERN)",
+    description: "",
+    image: "/projects/twitter.png",
+    tags: [
+      "React",
+      "TailwindCss",
+      "Daisy UI",
+      "Cloudinary",
+      "Node.js",
+      "Express",
+      "MongoDB",
+    ],
+    demoUrl: "https://mern-twitter-clone-7ivv.onrender.com",
+    githubUrl: "https://github.com/Alireza-ghanbari/mern-twitter-clone",
+  },
+  {
+    id: 7,
+    title: "Apple Store",
+    description: "",
+    image: "/projects/project7.png",
+    tags: ["React", "TailwindCss", "Gsap", "Three.js"],
+    demoUrl: "https://apple-website-weld-five.vercel.app/",
+    githubUrl: "https://github.com/Alireza-ghanbari/apple-website",
+  },
+  {
+    id: 1,
+    title: "Cuctos Shop",
+    description: "",
+    image: "/projects/project1.png",
+    tags: ["React", "TailwindCss", "Framer Motion"],
+    demoUrl: "https://cactus-shop-ten.vercel.app",
+    githubUrl: "https://github.com/Alireza-ghanbari/cactus-shop",
   },
   {
     id: 3,
-    title: "project three",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, quod!",
-    image: "/projects/project1.jpg",
-    tags: ["React", "TailwindCss"],
-    demoUrl: "#",
-    githubUrl: "#",
+    title: "Fast Food Delivery App",
+    description: "",
+    image: "/projects/project3.png",
+    tags: ["HTML / CSS", "JavaScript", "TailwindCss", "Framer Motion"],
+    demoUrl: "https://burger-shop-kappa.vercel.app",
+    githubUrl: "https://github.com/Alireza-ghanbari/burger-shop",
+  },
+  {
+    id: 4,
+    title: "Personal Portfolio",
+    description: "",
+    image: "/projects/project4.png",
+    tags: ["React", "TailwindCss", "Framer Motion"],
+    demoUrl: "https://simple-portfolio-delta-jet.vercel.app/",
+    githubUrl: "https://github.com/Alireza-ghanbari/simple-portfolio",
+  },
+  {
+    id: 5,
+    title: "Recipe App",
+    description: "",
+    image: "/projects/project5.png",
+    tags: ["React", "TailwindCss", "Framer Motion"],
+    demoUrl: "https://recipe-app-one-ashy.vercel.app/",
+    githubUrl: "https://github.com/Alireza-ghanbari/recipe-app",
+  },
+  {
+    id: 2,
+    title: "Buger King",
+    description: "",
+    image: "/projects/project2.png",
+    tags: ["HTML / CSS", "JavaScript", "Bootstrap"],
+    demoUrl: "https://bootstrap-project-brown.vercel.app",
+    githubUrl: "https://github.com/Alireza-ghanbari/bootstrap-project",
+  },
+  {
+    id: 6,
+    title: "Virtualr Landing",
+    description: "",
+    image: "/projects/project6.png",
+    tags: ["React", "TailwindCss", "Framer Motion"],
+    demoUrl: "https://virtualr-landing-page.vercel.app/",
+    githubUrl: "https://github.com/Alireza-ghanbari/Virtualr-landingPage",
   },
 ];
 
@@ -61,23 +168,27 @@ export default function ProjectSection() {
                 />
               </div>
 
-              <div className="px-4 py-6">
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tags.map((tag, key) => (
-                    <span
-                      key={key}
-                      className="px-2 py-1 text-xs text-forground font-medium rounded-full border"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
+              <div className="px-4 py-6 flex flex-col h-80 justify-between">
+                <div>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.tags.map((tag, key) => (
+                      <span
+                        key={key}
+                        className="px-2 py-1 text-xs text-forground font-medium rounded-full border"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
 
-                <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
-                <p className="text-forground text-sm mb-4">
+                  <h3 className="text-xl font-semibold mb-1">
+                    {project.title}
+                  </h3>
+                </div>
+                <p className="text-forground text-sm tracking-tight mb-4">
                   {project.description}
                 </p>
-                <div className="flex justify-between items-center">
+                <div className="flex justify-start items-end">
                   <div className="flex flex-wrap space-x-4">
                     <a
                       href={project.demoUrl}
