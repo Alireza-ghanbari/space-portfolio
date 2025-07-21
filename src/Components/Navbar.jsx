@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { cn } from "../lib/utils";
 import { IoMdClose, IoMdMenu } from "react-icons/io";
 import ThemeToggle from "./ThemeToggle";
+import LanguageSelector from "./LanguageSelector";
 
 const navItems = [
   { name: "Home", href: "#hero" },
@@ -59,7 +60,7 @@ export default function Navbar() {
 
         {/* desktop */}
 
-        <div className="hidden md:flex space-x-8">
+        <div className="hidden md:flex space-x-6 lg:space-x-8">
           {navItems.map((item) => (
             <a
               key={item.name}
@@ -69,6 +70,7 @@ export default function Navbar() {
               {item.name}
             </a>
           ))}
+          <LanguageSelector />
           <ThemeToggle />
         </div>
 
@@ -104,6 +106,7 @@ export default function Navbar() {
                 {item.name}
               </a>
             ))}
+            <LanguageSelector />
             <a onClick={() => setIsMenuOpen(false)} className="text-center">
               <ThemeToggle />
             </a>
