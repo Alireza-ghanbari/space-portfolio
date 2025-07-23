@@ -1,3 +1,16 @@
 {
-  "welcome": "Welcome to the app!"
+  "home": "Home",
+  "about": "About",
+  "skills": "Skills",
+  "projects": "Projects",
+  "contact": "Contact",
+
+  "Hi, I'm": "Hi, I'm",
+  "Alireza": "Alireza",
+  "Ghanbari": "Ghanbari",
+  "me1": "MERN Stack Developer.",
+  "me2": "I specialize in building modern, scalable, and high-performance web applications using",
+  "me3": ". With a passion for clean code, intuitive user experiences, and end-to-end development, I turn complex ideas into fast, reliable digital solutions.",
+  "View My Work": "View My Work",
+  "Scroll": "Scroll"
 }

@@ -3,15 +3,19 @@ import { cn } from "../lib/utils";
 import { IoMdClose, IoMdMenu } from "react-icons/io";
 import ThemeToggle from "./ThemeToggle";
 import LanguageSelector from "./LanguageSelector";
+import { useTranslation } from "react-i18next";
 
-const navItems = [
-  { name: "Home", href: "#hero" },
-  { name: "About", href: "#about" },
-  { name: "Skills", href: "#skills" },
-  { name: "Projects", href: "#projects" },
-  { name: "Contact", href: "#contact" },
-];
 export default function Navbar() {
+  const { t } = useTranslation();
+  
+  const navItems = [
+    { name: t("home"), href: "#hero" },
+    { name: t("about"), href: "#about" },
+    { name: t("skills"), href: "#skills" },
+    { name: t("projects"), href: "#projects" },
+    { name: t("contact"), href: "#contact" },
+  ];
+
   const [isNavActive, setIsNavActive] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
