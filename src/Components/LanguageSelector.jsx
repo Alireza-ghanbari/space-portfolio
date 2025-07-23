@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
 export default function LanguageSelector() {
@@ -9,6 +10,10 @@ export default function LanguageSelector() {
     document.dir = lang === "fa" ? "rtl" : "ltr";
   };
 
+  useEffect(() => {
+    document.dir = i18n.language === "fa" ? "rtl" : "ltr";
+  }, [i18n.language]);
+
   return (
     <div>
       <select
@@ -17,10 +22,10 @@ export default function LanguageSelector() {
         onChange={handleLanguageChange}
         className="outline-none border-none text-forground/80 cursor-pointer"
       >
-        <option value="en" className="bg-background ">
+        <option value="en" className="bg-background">
           English
         </option>
-        <option value="fa" className="bg-background ">
+        <option value="fa" className="bg-background">
           فارسی
         </option>
       </select>
