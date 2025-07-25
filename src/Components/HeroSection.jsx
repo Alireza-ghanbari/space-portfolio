@@ -9,8 +9,6 @@ export default function HeroSection() {
   const [isScrolling, setIsScrolling] = useState(false);
   const lang = i18n.language
 
-  console.log(lang)
-
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolling(true);
