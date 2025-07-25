@@ -1,40 +1,66 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { cn } from "../lib/utils";
-
-const skills = [
-  // Frontend
-  { name: "HTML/CSS", level: 100, category: "frontend" },
-  { name: "JavaScript", level: 90, category: "frontend" },
-  { name: "TypeScript", level: 35, category: "frontend" },
-  { name: "Next.js", level: 60, category: "frontend" },
-  { name: "React", level: 95, category: "frontend" },
-  { name: "tailwind CSS", level: 90, category: "frontend" },
-  { name: "Material UI", level: 50, category: "frontend" },
-  // Backend
-  { name: "Node.js", level: 80, category: "backend" },
-  { name: "Express", level: 75, category: "backend" },
-  { name: "MongoDB", level: 70, category: "backend" },
-  // Tools & Others
-  { name: "Git/Github", level: 80, category: "tools / Others" },
-  { name: "VS Code", level: 95, category: "tools / Others" },
-  { name: "figma", level: 30, category: "tools / Others" },
-  { name: "C/C++", level: 35, category: "tools / Others" },
-  { name: "Python", level: 40, category: "tools / Others" },
-  { name: "Adobe Premiere/Photoshop", level: 60, category: "tools / Others" },
-];
-
-const categories = ["all", "frontend", "backend", "tools / Others"];
+import { useTranslation } from "react-i18next";
 
 export default function SkillsSection() {
-  const [activeCategory, setActiveCategory] = useState("all");
+  const { t, i18n } = useTranslation();
+  const lang = i18n.language;
+
+  const skills = [
+    // Frontend
+    { name: "HTML/CSS", level: 100, category: t("frontend") },
+    { name: "JavaScript", level: 90, category: t("frontend") },
+    { name: "TypeScript", level: 35, category: t("frontend") },
+    { name: "Next.js", level: 60, category: t("frontend") },
+    { name: "React", level: 95, category: t("frontend") },
+    { name: "tailwind CSS", level: 90, category: t("frontend") },
+    { name: "Material UI", level: 50, category: t("frontend") },
+    // Backend
+    { name: "Node.js", level: 80, category: t("backend") },
+    { name: "Express", level: 75, category: t("backend") },
+    { name: "MongoDB", level: 70, category: t("backend") },
+    // Tools & Others
+    { name: "Git/Github", level: 80, category: t("tools / Others") },
+    { name: "VS Code", level: 95, category: t("tools / Others") },
+    { name: "figma", level: 30, category: t("tools / Others") },
+    { name: "C/C++", level: 35, category: t("tools / Others") },
+    { name: "Python", level: 40, category: t("tools / Others") },
+    {
+      name: "Adobe Premiere/Photoshop",
+      level: 60,
+      category: t("tools / Others"),
+    },
+  ];
+
+  const categories = [
+    `${t("all")}`,
+    `${t("frontend")}`,
+    `${t("backend")}`,
+    `${t("tools / Others")}`,
+  ];
+
+  const [activeCategory, setActiveCategory] = useState(t("all"));
+
+  useEffect(() => {
+    setActiveCategory(t("all"));
+  }, [lang]);
+
   const filterdSkills = skills.filter(
-    (skill) => activeCategory === "all" || skill.category === activeCategory
+    (skill) => activeCategory === t("all") || skill.category === activeCategory
   );
   return (
     <section id="skills" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          My <span className="text-primary">Skills</span>
+          {lang == "en" ? (
+            <span>
+              {t("My")} <span className="text-primary">{t("Skills")}</span>
+            </span>
+          ) : (
+            <span>
+              <span className="text-primary">{t("Skills")}</span> {t("My")}
+            </span>
+          )}
         </h2>
 
         <div className="flex flex-wrap justify-center gap-4 mb-12">

@@ -26,5 +26,12 @@
   "UI/UX Design": "طراحی UI/UX",
   "Designing intuitive user interface and seamless user experiences.": "طراحی رابط کاربری شهودی و تجربه کاربری روان.",
   "Project Management": "مدیریت پروژه",
-  "leading projects from conception to completion with agile methodologies.": "هدایت پروژه‌ها از ایده‌پردازی تا اجرا با استفاده از متدولوژی‌های چابک."
+  "leading projects from conception to completion with agile methodologies.": "هدایت پروژه‌ها از ایده‌پردازی تا اجرا با استفاده از متدولوژی‌های چابک.",
+
+  "My": "من",
+  "Skills": "مهارت‌های",
+  "all" : "همه",
+  "frontend": "فرانت‌اند",
+  "backend": "بک‌اند",
+  "tools / Others": "ابزارها / سایر"
 }
