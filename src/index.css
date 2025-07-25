@@ -161,3 +161,8 @@
   padding: 0;
   text-align: center;
 }
+
+#phone {
+  direction: ltr !important;
+  display: flex;
+}

@@ -62,5 +62,21 @@
   "Buger King": "Buger King",
   "This project is a responsive, multi-section website built using HTML, CSS, and Bootstrap 5. It demonstrates fundamental web development skills and showcases how to effectively use Bootstrap's grid system, components, and utilities to create a polished, mobile-friendly layout.": "This project is a responsive, multi-section website built using HTML, CSS, and Bootstrap 5. It demonstrates fundamental web development skills and showcases how to effectively use Bootstrap's grid system, components, and utilities to create a polished, mobile-friendly layout.",
   "Virtualr Landing": "Virtualr Landing",
-  "Virtualr Landing Page is a modern and responsive single-page application built using React and Tailwind CSS. It serves as the front-facing website for a virtual reality (VR) focused product or service, showcasing features, testimonials, and call-to-action elements designed to attract users and convey the brand's innovative edge.": "Virtualr Landing Page is a modern and responsive single-page application built using React and Tailwind CSS. It serves as the front-facing website for a virtual reality (VR) focused product or service, showcasing features, testimonials, and call-to-action elements designed to attract users and convey the brand's innovative edge."
+  "Virtualr Landing Page is a modern and responsive single-page application built using React and Tailwind CSS. It serves as the front-facing website for a virtual reality (VR) focused product or service, showcasing features, testimonials, and call-to-action elements designed to attract users and convey the brand's innovative edge.": "Virtualr Landing Page is a modern and responsive single-page application built using React and Tailwind CSS. It serves as the front-facing website for a virtual reality (VR) focused product or service, showcasing features, testimonials, and call-to-action elements designed to attract users and convey the brand's innovative edge.",
+
+  "Get In": "Get In",
+  "Touch": "Touch",
+  "Have a project in mind or want to collaborate? Feel free to reach out. I'm always open to discussing new opportunities.": "Have a project in mind or want to collaborate? Feel free to reach out. I'm always open to discussing new opportunities.",
+  "Contact information": "Contact information",
+  "Email": "Email",
+  "Phone": "Phone",
+  "Location": "Location",
+  "Iran, Mashhad": "Iran, Mashhad",
+  "Connect With Me": "Connect With Me",
+  "Send a Message": "Send a Message",
+  "Your Name": "Your Name",
+  "Your Email": "Your Email",
+  "Your Message": "Your Message",
+  "Send Message": "Send Message",
+  "Hello, I'd like to talk about...": "Hello, I'd like to talk about..."
 }
