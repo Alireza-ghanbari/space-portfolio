@@ -50,6 +50,21 @@ export default function ProjectSection() {
       githubUrl: "https://github.com/Alireza-ghanbari/mern-estate-farsi",
     },
     {
+      id: 8,
+      title: t("Yuosha Landing"),
+      description:
+        t("Yousha Landing Page is a modern, responsive website for selling online courses about earning in dollars. Built with React and Tailwind CSS, it features a clean design, smooth animations, and well-structured sections for course listings, pricing, and contact. The platform showcases multiple courses, providing visitors with clear information and an engaging browsing experience."),
+      image: "/projects/project8.png",
+      tags: [
+        "React",
+        "TailwindCss",
+        "Swiper",
+        "Atropos"
+      ],
+      demoUrl: "https://yousha-landing-page-kfmx.vercel.app",
+      githubUrl: "https://github.com/Alireza-ghanbari/Yousha-landingPage",
+    },
+    {
       id: 10,
       title: t("Blog App (MERN)"),
       description:
